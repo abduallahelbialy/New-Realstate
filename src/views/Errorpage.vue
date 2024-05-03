@@ -1,19 +1,31 @@
 <template>
   <div class="error">
     <div class="container">
-        <div class="row">
-            <div class=" text-danger d-flex justify-content-center fs-4">this page unfind</div>
+      <div class="row">
+        <div class="d-flex justify-content-center fs-4">
+          <div class="imgs">
+            <img :src="img" alt="" class="img-fluid" />
+          </div>
         </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import error from "../assets/0b219f91b508342ff91c997e16afeca4.gif";
 export default {
-name:"not",
-}
+  name: "not",
+  data() {
+    return {
+      img: error,
+    };
+  },
+};
 </script>
 
-<style>
-
+<style scoped>
+.imgs{
+  width: 100vw;
+}
 </style>

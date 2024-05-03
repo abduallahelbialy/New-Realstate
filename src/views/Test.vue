@@ -29,7 +29,7 @@
             />
           </div>
           <div class="d-flex flex-column align-items-center mt-3">
-            <input type="submit"  value="send" />
+            <input type="submit" value="send" />
           </div>
         </form>
         <button class="mt-4" @click="heo">go heom</button>
@@ -50,6 +50,7 @@ export default {
       password: "",
     };
   },
+ 
   methods: {
     vaild: function (e) {
       this.formerror = [];
